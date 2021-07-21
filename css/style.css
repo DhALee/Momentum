@@ -1,3 +1,71 @@
 .hidden {
     display: none;
 }
+div {
+    display: block;
+}
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    z-index: -1;
+    filter: brightness(90%);
+}
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px 0 20px;
+}
+#weather {
+    grid-column-start: 3;
+	grid-column-end: 4;
+    font-size: medium;
+    color: whitesmoke;
+    text-align: right;
+}
+#clock {
+    grid-column-start: 2;
+	grid-column-end: 3;
+    font-size: 60px;
+    padding: 50px 0 50px 0;
+    color:whitesmoke;
+    text-align: center;
+}
+#login-form, #todo-form {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+::placeholder {
+    color: greenyellow;
+}
+#login-form input {
+    text-align: center;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+}
+#todo-form input {
+    text-align: center;
+    width: 232.5px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+}
+#quote {
+    display: grid;
+    color:whitesmoke;
+    text-align: left;
+    padding: 0 0 20px 20px;
+ }
+article{
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+footer {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    width:100%
+}
