@@ -1,3 +1,99 @@
 .hidden {
     display: none;
 }
+div {
+    display: block;
+}
+img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0; left: 0;
+    z-index: -1;
+    filter: brightness(90%);
+}
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px 0 20px;
+}
+#weather {
+    grid-column-start: 3;
+	grid-column-end: 4;
+    font-size: medium;
+    color: whitesmoke;
+    text-align: right;
+}
+#clock {
+    grid-column-start: 2;
+	grid-column-end: 3;
+    font-size: 80px;
+    padding: 50px 0 50px 0;
+    color:whitesmoke;
+    text-align: center;
+}
+#login-form, #todo-form {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+::placeholder {
+    color: greenyellow;
+}
+input[type="text"] {
+    font-size:20px;
+}
+#login-form input {
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    color: greenyellow;
+}
+#todo-form input {
+    text-align: center;
+    width: 285px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    color: greenyellow;
+}
+#greeting {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+}
+#todo-list {
+    list-style-type: none;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+#quote {
+    display: grid;
+    color:whitesmoke;
+    text-align: left;
+    padding: 0 0 20px 20px;
+ }
+article{
+    font-family: fantasy;
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+footer {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    width:100%
+}
