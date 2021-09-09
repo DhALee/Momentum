@@ -1,3 +1,2 @@
 # Momentum
-
-### This is clone coding of Momentum
+This is clone coding of Momentum
